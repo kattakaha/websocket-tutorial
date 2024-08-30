@@ -55,13 +55,15 @@
     </style>
   </head>
   <body>
-    <ul id="messages"></ul>
-    <form id="form" action="">
-      <input id="input" autocomplete="off" /><button>Send</button>
-    </form>
-    <form id="disconnect" action="">
-      <button class="off-btn">Off</button>
-    </form>
+    <div style="padding: 10px">
+      <ul id="messages"></ul>
+      <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send</button>
+      </form>
+      <form id="disconnect" action="">
+        <button class="off-btn">Off</button>
+      </form>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script>
       let socket = io();
